@@ -1,0 +1,217 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Blog of Tuhin
+  link(rel='shortcut icon' href='https://unsplash.it/106/102/' type='image/x-icon')
+  link(rel='stylesheet' href='static/style.css')
+  link(href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' rel='stylesheet')
+  link(rel='stylesheet' href='tailmodify.css')
+  // slider
+  link(href='http://www.jqueryscript.net/css/jquerysctipttop.css' rel='stylesheet' type='text/css')
+  link(rel='stylesheet' type='text/css' href='static/sliderstyle.css')
+  script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
+  script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js')
+  script(type='text/javascript' src='static/slider.jquery.js')
+  script(type='text/javascript' src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+header#home
+  #title-text
+    h1 Welcome to Tuhin&apos;s blog
+  nav
+    ul
+      li
+        a(href='#home') home
+      li
+        a(href='#blog') blog
+      li
+        a(href='#about') about
+      li
+        a(href='#contact') contact
+main
+  // slider html
+  .container-slide
+    section.slider
+      img(width='100%' height='100%' src='https://unsplash.it/870/659/?blog1')
+      img.left(width='100%' height='100%' src='https://unsplash.it/870/659/?blog2')
+      img.center(width='100%' height='100%' src='https://unsplash.it/870/659/?blog3')
+      img.right(width='100%' height='100%' src='https://unsplash.it/870/659/?blog4')
+      img(width='100%' height='100%' src='https://unsplash.it/870/659/?blog5')
+  // gallary
+  section#blog.text-gray-800.body-font(style='width:100vw')
+    .container.px-5.py-24.mx-auto
+      .flex.flex-wrap.w-full.mb-20
+        .w-full.mb-6(class='lg:w-1/2 lg:mb-0')
+          h1.text-2xl.font-medium.title-font.mb-2.text-gray-900(class='sm:text-3xl') Pitchfork Kickstarter Taxidermy
+          .h-1.w-20.bg-red-500.rounded
+        p.w-full.leading-relaxed.text-black-500(class='lg:w-1/2')
+          | Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven&apos;t heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
+      .flex.flex-wrap.-m-4
+        .p-4(class='xl:w-1/4 md:w-1/2')
+          .bg-gray-300.p-6.rounded-lg
+            img.h-40.rounded.w-full.object-cover.object-center.mb-6(src='https://unsplash.it/720/400' alt='content')
+            h3.tracking-widest.text-red-500.text-xs.font-medium.title-font THIS IS MY POST
+            h2.text-lg.text-gray-900.font-medium.title-font.mb-4 Chichen Itza
+            p.leading-relaxed.text-base
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem odio, ad assumenda aperiam eos!
+          a.text-red-500(href='#' style='float: right; text-transform: capitalize; font-weight:600;') read more....
+        .p-4(class='xl:w-1/4 md:w-1/2')
+          .bg-gray-300.p-6.rounded-lg
+            img.h-40.rounded.w-full.object-cover.object-center.mb-6(src='https://unsplash.it/720/403' alt='content')
+            h3.tracking-widest.text-red-500.text-xs.font-medium.title-font THIS IS MY POST
+            h2.text-lg.text-gray-900.font-medium.title-font.mb-4 Colosseum Roma
+            p.leading-relaxed.text-base
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, enim quo. Eaque accusamus ipsam repudiandae!
+          a.text-red-500(href='#' style='float: right; text-transform: capitalize; font-weight:600;') read more....
+        .p-4(class='xl:w-1/4 md:w-1/2')
+          .bg-gray-300.p-6.rounded-lg
+            img.h-40.rounded.w-full.object-cover.object-center.mb-6(src='https://unsplash.it/720/402' alt='content')
+            h3.tracking-widest.text-red-500.text-xs.font-medium.title-font THIS IS MY POST
+            h2.text-lg.text-gray-900.font-medium.title-font.mb-4 Great Pyramid of Giza
+            p.leading-relaxed.text-base
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem perferendis molestias quod voluptate delectus illo.
+          a.text-red-500(href='#' style='float: right; text-transform: capitalize; font-weight:600;') read more....
+        .p-4(class='xl:w-1/4 md:w-1/2')
+          .bg-gray-300.p-6.rounded-lg
+            img.h-40.rounded.w-full.object-cover.object-center.mb-6(src='https://unsplash.it/720/401' alt='content')
+            h3.tracking-widest.text-red-500.text-xs.font-medium.title-font THIS IS MY POST
+            h2.text-lg.text-gray-900.font-medium.title-font.mb-4 San Francisco
+            p.leading-relaxed.text-base
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore, amet rerum nulla quod minima!
+          a.text-red-500(href='#' style='float: right; text-transform: capitalize; font-weight:600;') read more....
+  // contents
+  section.text-gray-100.bg-gray-700.body-font(style='margin-bottom: 20px;')
+    h1.heading did you know ?
+    .container.px-5.py-24.mx-auto
+      .flex.items-center.mx-auto.border-b.pb-10.mb-10.border-gray-200.flex-col(class='lg:w-3/5 sm:flex-row')
+        .h-20.w-20.inline-flex.items-center.justify-center.rounded-full.bg-red-100.text-red-500.flex-shrink-0(class='sm:w-32 sm:h-32 sm:mr-10')
+          svg.w-10.h-10(fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='sm:w-16 sm:h-16' viewbox='0 0 24 24')
+            path(d='M22 12h-4l-3 9L9 3l-3 9H2')
+        .flex-grow.text-center.mt-6(class='sm:text-left sm:mt-0')
+          h2.text-red-500.text-lg.title-font.font-medium.mb-2(style='font-weight:600;') Shooting Stars
+          p.leading-relaxed.text-base
+            | Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
+          a.mt-3.text-red-500.inline-flex.items-center.hover(href='#')
+            | Learn More
+            svg.w-4.h-4.ml-2(fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewbox='0 0 24 24')
+              path(d='M5 12h14M12 5l7 7-7 7')
+      .flex.items-center.mx-auto.border-b.pb-10.mb-10.border-gray-200.flex-col(class='lg:w-3/5 sm:flex-row')
+        .flex-grow.text-center.mt-6(class='sm:text-left sm:mt-0')
+          h2.text-red-500.text-lg.title-font.font-medium.mb-2(style='font-weight:600;') The Catalyzer
+          p.leading-relaxed.text-base
+            | Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
+          a.mt-3.text-red-500.inline-flex.items-center.hover(href='#')
+            | Learn More
+            svg.w-4.h-4.ml-2(fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewbox='0 0 24 24')
+              path(d='M5 12h14M12 5l7 7-7 7')
+        .order-first.h-20.w-20.inline-flex.items-center.justify-center.rounded-full.bg-red-100.text-red-500.flex-shrink-0(class='sm:w-32 sm:order-none sm:h-32 sm:ml-10')
+          svg.w-10.h-10(fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='sm:w-16 sm:h-16' viewbox='0 0 24 24')
+            circle(cx='6' cy='6' r='3')
+            circle(cx='6' cy='18' r='3')
+            path(d='M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12')
+      .flex.items-center.mx-auto.flex-col(class='lg:w-3/5 sm:flex-row')
+        .h-20.w-20.inline-flex.items-center.justify-center.rounded-full.bg-red-100.text-red-500.flex-shrink-0(class='sm:w-32 sm:h-32 sm:mr-10')
+          svg.w-10.h-10(fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='sm:w-16 sm:h-16' viewbox='0 0 24 24')
+            path(d='M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2')
+            circle(cx='12' cy='7' r='4')
+        .flex-grow.text-center.mt-6(class='sm:text-left sm:mt-0')
+          h2.text-red-500.text-lg.title-font.font-medium.mb-2(style='font-weight:600;') The 400 Blows
+          p.leading-relaxed.text-base
+            | Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
+          a.mt-3.text-red-500.inline-flex.items-center.hover(href='#')
+            | Learn More
+            svg.w-4.h-4.ml-2(fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewbox='0 0 24 24')
+              path(d='M5 12h14M12 5l7 7-7 7')
+      button.flex.mx-auto.mt-20.text-white.bg-red-500.border-0.py-2.px-8.rounded.text-lg(class='focus:outline-none hover:bg-red-600') SEE ALL
+  // about us
+  section#about.text-gray-600.body-font
+    .container.px-5.py-24.mx-auto
+      h1.text-3xl.font-medium.title-font.text-gray-900.mb-12.text-center About Us
+      .flex.flex-wrap.-m-4
+        .p-4.w-full(class='md:w-1/2')
+          .h-full.bg-gray-200.p-8.rounded
+            svg.block.w-5.h-5.text-gray-400.mb-4(xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewbox='0 0 975.036 975.036')
+              path(d='M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z')
+            p.leading-relaxed.mb-6
+              | Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90&apos;s microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
+            a.inline-flex.items-center
+              img.w-12.h-12.rounded-full.flex-shrink-0.object-cover.object-center(alt='testimonial' src='https://unsplash.it/106/106')
+              span.flex-grow.flex.flex-col.pl-4
+                span.title-font.font-medium.text-gray-900 Mohit Dey
+                span.text-gray-600.text-sm Subscriber
+        .p-4.w-full(class='md:w-1/2')
+          .h-full.bg-gray-200.p-8.rounded
+            svg.block.w-5.h-5.text-gray-400.mb-4(xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewbox='0 0 975.036 975.036')
+              path(d='M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z')
+            p.leading-relaxed.mb-6
+              | This is a blog website where you can find many exciting posts that you can engjoy very much so plase make sure subscribe it and vist here for daily blogs on tech and other stuffs also on the notifictation for get the news quickly.
+            a.inline-flex.items-center
+              img.w-12.h-12.rounded-full.flex-shrink-0.object-cover.object-center(alt='testimonial' src='https://unsplash.it/106/102/')
+              span.flex-grow.flex.flex-col.pl-4
+                span.title-font.font-medium.text-gray-900 Tuhin Kairi
+                span.text-gray-600.text-sm OWNER
+  // form
+  section#contact.text-gray-800.body-font.relative(style='background-color: wheat;')
+    .container.px-5.py-24.mx-auto
+      .flex.flex-col.text-center.w-full.mb-12
+        h1.text-2xl.font-medium.title-font.mb-4.text-gray-900(class='sm:text-3xl') Contact Us
+        p.mx-auto.leading-relaxed.text-base(class='lg:w-2/3')
+          | Whatever cardigan tote bag tumblr hexagon brooklyn
+          | asymmetrical gentrify.
+      .mx-auto(class='lg:w-1/2 md:w-2/3')
+        .flex.flex-wrap.-m-2
+          .p-2(class='w-1/2')
+            .relative
+              form(action='/' method='post')
+                label.leading-7.text-sm.text-gray-800(for='name' ) Name
+                input#name.w-full.bg-white-100.bg-opacity-50.rounded.border.border-gray-300.text-base.outline-none.text-gray-700.py-1.px-3.leading-8.transition-colors.duration-200.ease-in-out(type='text' name='name' placeholder='Enter your Name.....' class='focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200')
+          .p-2(class='w-1/2')
+            .relative
+              label.leading-7.text-sm.text-gray-800(for='email' ) Email
+              input#email.w-full.bg-white-100.bg-opacity-50.rounded.border.border-gray-300.text-base.outline-none.text-gray-700.py-1.px-3.leading-8.transition-colors.duration-200.ease-in-out(type='email' name='email' placeholder='sample@gamil.com' class='focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200')
+          .p-2.w-full
+            .relative
+              label.leading-7.text-sm.text-gray-800(for='message') Message
+              textarea#message.w-full.bg-white-100.bg-opacity-50.rounded.border.border-gray-300.h-32.text-base.outline-none.text-gray-700.py-1.px-3.resize-none.leading-6.transition-colors.duration-200.ease-in-out(name='message' class='focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200'  placeholder='Enter your problem...')
+          .p-2.w-full
+            button.flex.mx-auto.mt-20.text-white.bg-red-500.border-0.py-2.px-8.rounded.text-lg(type="reset" class='focus:outline-none hover:bg-red-600 button' ) SUBMIT
+           
+footer.text-gray-800.body-font
+  .container.px-5.py-8.mx-auto.flex.items-center.flex-col(class='sm:flex-row')
+    a.flex.title-font.font-medium.items-center.justify-center.text-gray-100(class='md:justify-start')
+      svg.w-10.h-10.text-white.p-2.bg-red-500.rounded-full(xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewbox='0 0 24 24')
+        path(d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5')
+      span.ml-3.text-xl My blog
+    p.text-sm.text-gray-100.mt-4(class='sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0')
+      | &copy; 2022 My
+      | Blog &mdash;
+      a.text-gray-100.ml-1(href='https://twitter.com/Myblog' rel='noopener noreferrer' target='_blank') @MyBlog
+    span.inline-flex.mt-4.justify-center(class='sm:ml-auto sm:mt-0 sm:justify-start')
+      a.text-gray-100(href='https:/www.facebook.com')
+        svg.w-5.h-5(fill='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewbox='0 0 24 24')
+          path(d='M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z')
+      a.ml-3.text-gray-100(href='https:/www.twitter.com')
+        svg.w-5.h-5(fill='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewbox='0 0 24 24')
+          path(d='M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z')
+      a.ml-3.text-gray-100(href='https:/www.instagram.com')
+        svg.w-5.h-5(fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewbox='0 0 24 24')
+          rect(width='20' height='20' x='2' y='2' rx='5' ry='5')
+          path(d='M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01')
+      a.ml-3.text-gray-100(href='https:/www.linkedin.com')
+        svg.w-5.h-5(fill='currentColor' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='0' viewbox='0 0 24 24')
+          path(stroke='none' d='M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z')
+          circle(cx='4' cy='4' r='2' stroke='none')
+script(type='text/javascript').
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+  (function () {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+  '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+  })();

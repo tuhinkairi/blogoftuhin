@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#title-text{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 10px 20px;
+    
+}
+header{
+    margin: 0px 10px;
+}
+header h1{
+    padding: 10px;
+    border: 2px solid skyblue;
+    border-left: 10px solid skyblue;
+    border-right: 10px solid skyblue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: normal;
+    font-size: 40px;
+}
+nav{
+    background-color: rgb(70, 70, 70);
+    border-radius: 15px;
+    margin: 10px 20px;
+   
+
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+li a{
+    margin: 5px 10px;
+    color: wheat;
+    padding: 15px;
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 40px;
+    color:wheat;
+    border-bottom: 2px solid white
+}
+body{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+
+}
+footer{
+    margin-top: 20px;
+    background-color: rgb(70, 70, 70);
+}
+/* extra */
+.hover:hover{
+    color: white;
+}
+.button:active{
+    color:white;
+    background-color: rgb(70, 70, 70);
+}
